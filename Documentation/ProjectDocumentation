@@ -1,0 +1,76 @@
+06/03/2023:- Day 1 -> Just see overview using diagram of project. What are the files and architecture we needed in 
+			 our project.How our website look like and what operation admin can perform in website. How we can store 
+			 and retrieve the data from database.
+
+07/03:- Day 2 -> See All steps required for project to develop. 
+				 First create one dynamic project then add jar files of sql and jstl. Create database and create new 
+				 database and table in it. Create Bean Class and create private variables constructor and getter 
+				 & setters in it. 
+				 Create 3 different packages. One package have servlet class, One package have jdbc class,One package
+				 have Bean class.
+				 Create 2 jsp file one for customer list and another for customer form.
+				 To handling all the incoming request from browser we create servlet.
+				 
+09/03:- Day 3 -> Add nav bar in the both jsp pages and redirection hyperlink to home page also added in that pages. 
+				 
+10/03:- Day 4 -> Create one div element in customer list jsp page and add one button in it. Write the code to display 
+				 the table data present in database.
+				 write code in Dao class i.e. for writing jdbc code. To fetch all customer data present in database 
+				 write a getAllCustomers method and in that write query of select statement and loop to get all data
+				 and store in a Object type of Customer and add that object in a collection of arrayList and return 
+				 that through a variable.Close all the opened connections in finally block. 
+				 Write code in servlet in doGet() method. Write default servlet code using switch case.
+				 After that create one startUp method for default servlet calling user define home jsp page.
+
+13/03:- Day 5 -> Writing the code in customer-list.jsp page for getting data from database to jsp page. We import 
+				 some class & packages. Fetch the data from Controller and display the data with the help of variables.
+				 Create edit and delete link for all rows. First write code using scriplet tag and html to display data 
+				 in page. After that secondly write code using jstl and bootstrap 5. For jstl write one uri and for 
+				 bootstrap pasted one link of bootstrap. Finally we displayed the all rows present in table data.
+
+14/03:- Day 6 -> Start writing from dao class and create one method named addCustomer for inserting new row or data 
+				 inside database enter by user.
+				 In servlet write one case label in switch case and create one method named as addCustomer for adding
+				 all data enter by user in jsp page and fetch that data and store in a object. Call the method present
+				 inside dao and pass the object.
+				 Write one more case in switch and one method for redirecting user to customer-form.jsp page.
+
+15/03:- Day 7 -> Create one container in Div tag and write code for Form page as name,email,mobile and save button.One 
+				 more div for id as hidden key. Give the action in form tag as add and method post to add customer.
+
+16/03:- Day 8 -> Check the edit form, is it working or not and Overview of next process. Add href to edit button using
+				 Query string assign the id. Create one case label as edit and getEditForm to perform the specific  
+				 functionality. 
+				 In dao class write method of update data by writing code for that in that method.
+				 In controller class write code for edit functionality.
+
+17/03:- Day 9 -> Write if condition for add and edit url in the form.jsp page. Getting all the data enter by user in the
+				 page using jstl. In controller get the id through url and send to the dao class for required 
+				 modification.  
+
+18/03:- Day 10 -> First see the overview of project once and then start writing code in dao class. Write Query for 
+				  update customer and declared one method to do this task named as updateCustomer.
+				  After that write code in controller. One case label in switch case and one method named as 
+				  updateCustomer to update the customer data, first catching the data and after that pass to dao method 
+				  to perform update operation. At Last redirect user to list jsp page.
+				  After that bdebug our program and check line by line.
+				  Write code in dao class for delete opration so write a query and a method to perform that operation 
+				  named as deleteCustomer. After that write code in servlet and in switch write one new case label 
+				  as delete and a method as deleteCustomer and in that call dao method and at last redirect user to 
+				  home page.
+				  At last write code in list.jsp for delete link with href "delete" and run the project.
+				  Add the href for customer hyperlink to redirect user to home page.
+				  
+23/03:- Day 11 -> Previous day sir tell to implement the login functionality for admin in project.
+				  Create table in workbench for admin login page.
+				  Create one model class named as Admin and create required private variables. Generate getter and 
+				  setters and constructors as per requirement.
+				  Create one dao class named as AdminDao for admin login functionality. In that create one method as 
+				  validateAdmin and do validation steps coding.
+				  Create one jsp page named as admin-login and with the help of bootstrap create login page interface.
+				  In controller writing the one more case label as list and create one method and implement required 
+				  functionality.
+				  For list page create one case label and paste the code of redirection in one method and use that 
+				  method in other 
+				  methods where is needed.
+				  All done just change the href link of customer hyperlink. Do other changes  whatever developer need.				  
